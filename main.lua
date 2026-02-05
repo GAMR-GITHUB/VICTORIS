@@ -2,8 +2,8 @@
 --- MOD_NAME: VICTORIS
 --- MOD_ID: VICTORIS
 --- PREFIX: vic
---- MOD_AUTHOR: [Your Name]
---- MOD_DESCRIPTION: Put your dicription here :)
+--- MOD_AUTHOR: [GAMR]
+--- MOD_DESCRIPTION: Custom Music for Showdown Blinds. Coding by Rose. Music by GAMR.
 local VICTORIS  = SMODS.current_mod
 local config = VICTORIS.config
 
