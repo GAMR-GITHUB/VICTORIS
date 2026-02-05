@@ -1,7 +1,7 @@
 # VICTORIS
 A Balatro Mod that adds custom music for every showdown blind.
 Music by GAMR
-Coding by ??? (WAITING FOR CONFIRMATION OF THE NAME THEY WANT TO BE CREDITED WITH)
+Coding by Rose
 
 V1 -- All Vanilla Blinds Compatible (OUT NOW)
 
