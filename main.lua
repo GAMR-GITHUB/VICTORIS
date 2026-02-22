@@ -15,7 +15,8 @@ local vertical_tabs = {}
         create_option_cycle({label = 'Verdant Leaf', current_option = VICTORIS.config.vic_vl, options = {'Off', 'Showdown', 'Whole Ante'}, ref_table = VICTORIS.config, ref_value = 'vic_vl', text_scale=0.5*0.65/(5/6), scale=5/6, no_pips = true, opt_callback = 'cycle_update'}),
         create_option_cycle({label = 'Violet Vessel', current_option = VICTORIS.config.vic_vv, options = {'Off', 'Showdown', 'Whole Ante'}, ref_table = VICTORIS.config, ref_value = 'vic_vv', text_scale=0.5*0.65/(5/6), scale=5/6, no_pips = true, opt_callback = 'cycle_update'}),
         create_option_cycle({label = 'Crimson Heart', current_option = VICTORIS.config.vic_ch, options = {'Off', 'Showdown', 'Whole Ante'}, ref_table = VICTORIS.config, ref_value = 'vic_ch', text_scale=0.5*0.65/(5/6), scale=5/6, no_pips = true, opt_callback = 'cycle_update'}),
-        create_option_cycle({label = 'Cerulean Bell', current_option = VICTORIS.config.vic_cb, options = {'Off', 'Showdown', 'Whole Ante'}, ref_table = VICTORIS.config, ref_value = 'vic_cb', text_scale=0.5*0.65/(5/6), scale=5/6, no_pips = true, opt_callback = 'cycle_update'})
+        create_option_cycle({label = 'Cerulean Bell', current_option = VICTORIS.config.vic_cb, options = {'Off', 'Showdown', 'Whole Ante'}, ref_table = VICTORIS.config, ref_value = 'vic_cb', text_scale=0.5*0.65/(5/6), scale=5/6, no_pips = true, opt_callback = 'cycle_update'}),
+        create_option_cycle({label = 'Jade Penguin', current_option = VICTORIS.config.vic_jp_jp, options = {'Off', 'Showdown', 'Whole Ante'}, ref_table = VICTORIS.config, ref_value = 'vic_cb', text_scale=0.5*0.65/(5/6), scale=5/6, no_pips = true, opt_callback = 'cycle_update'})
     }},
     }}
 end
@@ -105,5 +106,20 @@ SMODS.Sound({
         if config.vic_vl == 1 then return false
         elseif config.vic_cb == 2 then return check2 and 2 or false
         elseif config.vic_cb == 3 then return check3 and 2 or false end
+    end
+})
+
+SMODS.Sound({
+    vol = 0.6,
+    pitch = 1,
+    sync = false,
+    key = "music_jpaot_penguin",
+    path = "music_jpaot_penguin.ogg",
+    select_music_track = function()
+        local check2 = G.GAME and G.GAME.blind and G.GAME.blind.in_blind and G.GAME.blind.config.blind.key == "bl_jpaot_jpenguin"
+        local check3 = G.GAME and G.GAME.round_resets.blind_choices.Boss == "bl_jpaot_jpenguin"
+        if config.vic_vl == 1 then return false
+        elseif config.vic_vl == 2 then return check2 and 2 or false
+        elseif config.vic_vl == 3 then return check3 and 2 or false end
     end
 })

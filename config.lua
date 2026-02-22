@@ -4,4 +4,5 @@ return {
 	vic_vv = 2,
 	vic_ch = 2,
 	vic_cb = 2,
+	vic_jp_jp = 2,
 }
