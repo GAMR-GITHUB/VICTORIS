@@ -5,6 +5,6 @@ Coding by Rose
 
 V1 -- All Vanilla Blinds Compatible (OUT NOW)
 
-V1.1: Neonflame/Jade Penguin -- UP NEXT
+V1.1: Jade Penguin's Adapt or Toast/Jade Penguin -- UP NEXT
 
 V3.0: Aikoyori's Shenanigans -- IN QUEUE
